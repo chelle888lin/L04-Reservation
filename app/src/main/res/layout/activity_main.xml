@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                app:srcCompat="@drawable/rsto"
+                android:layout_marginTop="-50dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="-75dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/restoName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dusk Bistro"
+                    android:textStyle="bold"
+                    android:layout_marginTop="40dp"
+                    android:textSize="30dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:layout_weight="1"
+                    android:textColor="#a9a9a9"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="phone"
+                    android:text="Phone Number"
+                    android:layout_weight="1"
+                    android:textColor="#a9a9a9"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/groupNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Size of Group"
+                    android:layout_marginLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/editTextNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="Number"
+                    android:layout_weight="1"
+                    android:textColor="#a9a9a9"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="Date of Reservation"
+                        android:gravity="center"/>
+
+                    <DatePicker
+                        android:id="@+id/datePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="Time of Reservation"
+                        android:gravity="center"/>
+
+                    <TimePicker
+                        android:id="@+id/timePicker"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:timePickerMode="spinner"
+                        android:calendarViewShown="false"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ToggleButton"
+                    android:textOff="Non-Smoking"
+                    android:textOn="Smoking" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp">
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btnRest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reset"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"/>
+
+    </ScrollView>
+
+</LinearLayout>
